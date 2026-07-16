@@ -4,7 +4,7 @@ Classify the titanic dataset is it save or not ?
 The project is the analyze the titanic Dataset feature and build a model that can the person is save or die.
 ## Dataset Features 📄
 The dataset contain the following features:
-- PassengerId
+- PassengerId
 - Pclass
 - Sex
 - Age
@@ -27,7 +27,7 @@ The following preprocessing steps were performed:
 - Remove the class column and make deck for example a calss b class like that
 - prepared data for machine learning models
 ## Machine learning Models🤖
-The following regression models were trained and compared
+The following classification models were trained and compared
 1. Logistic Regression 
 2. K-Nearest Neighbors Classifier
 3. Decision Tree Classifier
@@ -44,3 +44,23 @@ The following regression models were trained and compared
 
 ## Best Model ✔️
 Random Forest Classifier was selected as the final model because it provide the best performance
+
+## How to Run 🚀
+1. Clone the repository
+   ```
+   git clone https://github.com/Hussnain-10/Titanic-Survived.git
+   cd Titanic-Survived
+   ```
+2. Install the dependencies
+   ```
+   pip install -r requirements.txt
+   ```
+3. Train the model
+   ```
+   cd scripts
+   python train.py
+   ```
+4. Run a prediction on a new passenger
+   ```
+   python predict.py
+   ```
