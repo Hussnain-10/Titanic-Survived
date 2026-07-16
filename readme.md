@@ -4,8 +4,7 @@ Classify the titanic dataset is it save or not ?
 The project is the analyze the titanic Dataset feature and build a model that can the person is save or die.
 ## Dataset Features 📄
 The dataset contain the following features:
-- PassengerId
-- Bathrooms
+- PassengerId
 - Pclass
 - Sex
 - Age
