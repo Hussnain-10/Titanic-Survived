@@ -34,11 +34,10 @@ The following regression models were trained and compared
 3. Decision Tree Classifier
 4. Random Forest Classifeir
 ## Model Evaluation 🪄
-Model are evaluated using:
-- Accuracy 
-- precision  
-- recall score
-Example Comparison :
+​Models are evaluated using:
+​Accuracy
+​Precision
+​Recall Score
 ModelAccuracyPrecisionRecall
 Logistic Regression80.4%78.3%73.0%
 K-Neighbors Classifier79.9%82.8%64.9%
