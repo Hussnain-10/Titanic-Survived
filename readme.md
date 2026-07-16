@@ -39,11 +39,11 @@ Model are evaluated using:
 - precision  
 - recall score
 Example Comparison :
-MODEL                                Accuracy               |precision                         | recall score
-Logistic Regression            0.8044692737430168           |0.782608695652174                 | 0.7297297297297297
-KNeighborsClassifier           0.7988826815642458           | 0.8275862068965517               | 0.6486486486486487
-DecisionTreeClassifier         0.7821229050279329           | 0.7536231884057971               | 0.7027027027027027
-RandomForestClassifier         0.8379888268156425           |0.8333333333333334               |  0.7702702702702703
+ModelAccuracyPrecisionRecall
+Logistic Regression80.4%78.3%73.0%
+K-Neighbors Classifier79.9%82.8%64.9%
+Decision Tree Classifier78.2%75.4%70.3%
+Random Forest Classifier83.8%83.3%77.0%
 
 ## Best Model ✔️
 Random Forest Classifier was selected as the final model because it provide the best performance
