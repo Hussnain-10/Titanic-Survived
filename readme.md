@@ -34,15 +34,14 @@ The following regression models were trained and compared
 3. Decision Tree Classifier
 4. Random Forest Classifeir
 ## Model Evaluation 🪄
-​Models are evaluated using:
-​Accuracy
-​Precision
-​Recall Score
-ModelAccuracyPrecisionRecall
-Logistic Regression80.4%78.3%73.0%
-K-Neighbors Classifier79.9%82.8%64.9%
-Decision Tree Classifier78.2%75.4%70.3%
-Random Forest Classifier83.8%83.3%77.0%
+​Models are evaluated using **Accuracy**, **Precision**, and **Recall Score**:
+
+| Model | Accuracy | Precision | Recall |
+| :--- | :---: | :---: | :---: |
+| **Logistic Regression** | 80.4% | 78.3% | 73.0% |
+| **K-Neighbors Classifier** | 79.9% | 82.8% | 64.9% |
+| **Decision Tree Classifier** | 78.2% | 75.4% | 70.3% |
+| **Random Forest Classifier** | **83.8%** | **83.3%** | **77.0%** |
 
 ## Best Model ✔️
 Random Forest Classifier was selected as the final model because it provide the best performance
