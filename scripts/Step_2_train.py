@@ -10,9 +10,11 @@ df = clean_data('Titanic-Dataset.csv')
 
 df = pd.get_dummies(df, columns=['Title', 'Deck'], drop_first=True)
 
-lE = LabelEncoder()
-df['Sex'] = lE.fit_transform(df['Sex'])
-df['Embarked'] = lE.fit_transform(df['Embarked'])
+sex_encoder = LabelEncoder()
+df['Sex'] = sex_encoder.fit_transform(df['Sex'])
+
+embarked_encoder = LabelEncoder()
+df['Embarked'] = embarked_encoder.fit_transform(df['Embarked'])
 
 X = df.drop('Survived', axis=1)
 y = df['Survived']
@@ -36,5 +38,6 @@ cv_scores = cross_val_score(model_Rt, X_scaled, y, cv=5)
 print(f"5-fold CV accuracy: {cv_scores.mean():.3f} +/- {cv_scores.std():.3f}")
 
 with open('Random_forest1.pkl', 'wb') as file:
-    pickle.dump({'model': model_Rt, 'scaler': scaler, 'columns': X.columns.tolist()}, file)
+    pickle.dump({'model': model_Rt, 'scaler': scaler, 'columns': X.columns.tolist(),
+                 'sex_encoder': sex_encoder, 'embarked_encoder': embarked_encoder}, file)
 print("Saved model bundle.")
