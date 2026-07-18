@@ -58,9 +58,9 @@ Random Forest Classifier was selected as the final model because it provide the 
 3. Train the model
    ```
    cd scripts
-   python train.py
+   python Step_2_train.py
    ```
 4. Run a prediction on a new passenger
    ```
-   python predict.py
+   python Step_3_predict.py
    ```
